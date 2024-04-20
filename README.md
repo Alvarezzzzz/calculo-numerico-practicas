@@ -1,4 +1,4 @@
 # calculo-numerico
-Aqui se iran colocando todos los programas del curso de calculo numerico de Alejandro Alvarez 31629822
+Repositorio de la materia de calculo-numerio
 ## descripcion
-Descripcion del repositorio
+Aqui se iran colocando todos los programas del curso de calculo numerico de Alejandro Alvarez 31629822
