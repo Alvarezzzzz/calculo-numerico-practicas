@@ -27,9 +27,7 @@ class Persona:
     def es_mayor(self):
         return self.edad >=18
 
-condicion = True
 n = "asaskhjfbksadf"
-int("456asd6")
 while not n.isnumeric():
     n = input("Coloque el numero de personas: ")
     if not n.isnumeric():
@@ -38,9 +36,26 @@ n = int(n)
 personas = list()
 
 for i in range(n):
-    nombre = input("De el nombre de la persona: ")
-    edad = input("De la edad de la persona: ")
-    cedula = input("De la cedula de la persona: ") 
+    while True:
+        nombre = input("De el nombre de la persona: ")
+        if nombre.replace(" ", "").isalpha():
+            break
+        else:
+            print("Nombre incorrecto")
+    
+    try:
+        edad = input("De la edad de la persona: ")
+    except ValueError:
+        print("Valor de edad incorrecto")
+        edad = 0
+    while True:
+        cedula = input("De la cedula de la persona: ") 
+        cedula = cedula.replace("," ,"").replace("." , "").replace(" " , "")
+        if all(digito.isdigit() for digito in cedula):
+            break
+        else:
+            print("Cedula mala, vuelve a colocarla")
+    
     personas.append(Persona(nombre , edad , cedula))
 
 for i in range(len(personas)):
