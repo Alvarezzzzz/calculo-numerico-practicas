@@ -1,7 +1,5 @@
-#Maria aqui, de una.
-#esto es la clase persona pe'
 class Persona:
-    def __init__(self , nombre = "" , edad = "" , cedula = "") :
+    def __init__(self , nombre = "" , edad = 0 , cedula = "") :
         self.nombre = nombre
         self.edad = edad
         self.cedula = cedula
@@ -44,7 +42,7 @@ for i in range(n):
             print("Nombre incorrecto")
     
     try:
-        edad = input("De la edad de la persona: ")
+        edad = int(input("De la edad de la persona: "))
     except ValueError:
         print("Valor de edad incorrecto")
         edad = 0
