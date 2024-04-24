@@ -1,2 +1,0 @@
-x = "epale"
-print("x")
