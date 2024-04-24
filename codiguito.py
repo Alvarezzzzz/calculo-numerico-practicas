@@ -1,0 +1,2 @@
+x = "epale"
+print("x")
