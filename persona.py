@@ -27,7 +27,7 @@ class Persona:
 
 n = "asaskhjfbksadf"
 while not n.isnumeric():
-    n = input("Coloque el numero de personas: ")
+    n = input("Coloque la cantidad de personas: ")
     if not n.isnumeric():
         print("Valor invalido")
 n = int(n)
