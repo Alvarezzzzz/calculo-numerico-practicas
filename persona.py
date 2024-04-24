@@ -1,3 +1,4 @@
+#Comentario desde repo local
 class Persona:
     def __init__(self , nombre = "" , edad = 0 , cedula = "") :
         self.nombre = nombre
