@@ -1,6 +1,8 @@
 import flet as ft
 import funciones
 
+#Cedula 31629822 
+
 #Clase del boton personalizado
 class MyButton(ft.ElevatedButton):
     def __init__(self, text , on_clicked):
