@@ -267,7 +267,7 @@ def main(page: ft.Page):
     #fila2
     tab2_row_s = ft.Row(
         controls=[
-            ft.TextField(label="Numero" , multiline=True , min_lines=8 , max_lines=8 , text_align="center" ),
+            ft.TextField(label="Numero" , multiline=True , min_lines=8 , max_lines=8 , text_align="center" , hint_text= "Coloque un numero acorde al sistema numerico seleccionado"),
             ft.TextField(label="Conversiones" , multiline=True , min_lines=8 , max_lines=8 , read_only=True , text_align="left" ) 
         ],
         alignment="center",
